@@ -1,6 +1,7 @@
-# D2T1-project8  Jenkins-ci-P8
+# D2T1-project8  Jenkins-ci
 
 **How to contribute to a project in your organization **
+
 Steps to contribute to a project are as follows:
 - git clone (repo Url) ------> To clone remote project repository into my local machine.
 - git checkout -b feature ---> To create a new feature branch and switch into it.
