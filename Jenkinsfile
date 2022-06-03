@@ -11,7 +11,7 @@ pipeline{
                 sh 'lscpu'
             }
         }
-        stage('disk usage check by chris'){
+        stage('3-disk usage check by chris'){
             steps{
                 sh 'du -h'
             }
