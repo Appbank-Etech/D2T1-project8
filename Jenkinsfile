@@ -16,5 +16,10 @@ pipeline{
                 sh 'du -h'
             }
         }
+	stage('4-Juliet'){
+            steps{
+                sh 'df -h'
+            }
+        }
     }
 }
