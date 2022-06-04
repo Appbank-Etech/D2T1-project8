@@ -1,15 +1,15 @@
 pipeline{
-agent any
-stages{
-stage('1-system processes'){
-steps{
-sh 'ps -ef'
-stage('2-jenkins status'){
-steps{
-sh 'sudo systemctl status jenkins'
-}
-}
-}
-}
-}
+    agent any
+    stages{
+        stage('1-system processes'){
+            steps{
+                sh 'ps -ef'
+        stage('2-jenkins status'){
+            steps{
+                sh 'sudo systemctl jenkins status'
+                    }
+                }
+            }
+        }
+    }
 }
