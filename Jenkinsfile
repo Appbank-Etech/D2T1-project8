@@ -23,7 +23,7 @@ pipeline{
         }
         stage('5-Yainkain'){
             steps{
-                sh 'echo HELLO ETECH!! 4TH JOB FOR APPBANK GROUP'
+                echo 'HELLO ETECH!! 4TH JOB FOR APPBANK GROUP'
             }
         }
         stage('6-system memory check-Tunde'){
