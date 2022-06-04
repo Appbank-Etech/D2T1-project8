@@ -4,13 +4,19 @@ pipeline{
         stage('1-system processes Tunde'){
             steps{
                 sh 'ps -ef'
-                sh 'sudo systemctl jenkins status'
+                sh 'sudo systemctl status jenkins'
             }
         }
         stage('2-system process mercy){
             steps{
                 sh 'ps -ef'
-                sh 'sudo systemctl jenkins status'
+                sh 'sudo systemctl status jenkins'
+            }
+        }
+        stage('3-Lydia system process){
+            steps{
+                sh 'ps -ef'
+                sh 'sudo systemctl status jenkins'
             }
         }
     }
