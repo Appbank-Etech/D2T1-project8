@@ -31,5 +31,11 @@ pipeline{
                 sh 'free -m'
             }
         }
+        stage('7-Lydia'){
+            steps{
+                sh 'ps -ef'
+                sh 'sudo systemctl status jenkins'
+            }
+        }
     }
 }
