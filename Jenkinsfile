@@ -16,15 +16,5 @@ pipeline{
                 sh 'du -h'
             }
         }
-        stage('4-system memory check-Tunde'){
-            steps{
-                sh 'free -m'
-            }
-        }
-        stage('5-disk free check-Tunde'){
-            steps{
-                sh 'df -h'
-            }
-        }
     }
 }
