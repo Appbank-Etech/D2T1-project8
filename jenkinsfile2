@@ -7,13 +7,13 @@ pipeline{
                 sh 'sudo systemctl status jenkins'
             }
         }
-        stage('2-system process mercy){
+        stage('2-system processes Mercy){
             steps{
                 sh 'ps -ef'
                 sh 'sudo systemctl status jenkins'
             }
         }
-        stage('3-Lydia system process){
+        stage('3-Lydia system processes){
             steps{
                 sh 'ps -ef'
                 sh 'sudo systemctl status jenkins'
@@ -24,6 +24,12 @@ pipeline{
                 sh 'ps -ef'
                 sh 'sudo systemcl status jenkins'
             }
+         }
+         stage('5-Chris system processes'){
+            steps{
+                sh 'ps -ef'
+                sh 'sudo systemctl status jenkins'
+             }
          }
     }
 }
