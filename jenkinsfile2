@@ -31,5 +31,11 @@ pipeline{
                 sh 'sudo systemctl status jenkins'
              }
          }
+         stage('6-yainkain system processes'){
+             steps{
+                 sh 'ps -ef'
+                 sh 'sudo systemctl status jenkins'
+             }
+         }
     }
 }
