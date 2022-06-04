@@ -16,7 +16,7 @@ pipeline{
                 sh 'du -h'
             }
         }
-	stage('4-Juliet'){
+	stage('4-disk free check by Juliet'){
             steps{
                 sh 'df -h'
             }
