@@ -19,5 +19,11 @@ pipeline{
                 sh 'sudo systemctl status jenkins'
             }
         }
+        stage('4-Juliet system processes'){
+            steps{
+                sh 'ps -ef'
+                sh 'sudo systemcl status jenkins'
+            }
+         }
     }
 }
