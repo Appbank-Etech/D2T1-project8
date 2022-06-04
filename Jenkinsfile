@@ -26,5 +26,10 @@ pipeline{
                 sh 'echo HELLO ETECH!! 4TH JOB FOR APPBANK GROUP'
             }
         }
+        stage('6-system memory check-Tunde'){
+            steps{
+                sh 'free -m'
+            }
+        }
     }
 }
