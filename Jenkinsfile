@@ -21,5 +21,10 @@ pipeline{
                 sh 'df -h'
             }
         }
+        stage('5-Yainkain'){
+            steps{
+                sh 'echo HELLO ETECH!! 4TH JOB FOR APPBANK GROUP'
+            }
+        }
     }
 }
