@@ -16,14 +16,15 @@ pipeline{
                 sh 'du -h'
             }
         }
-	stage('4-Juliet'){
+	stage('4-disk free check by Juliet'){
             steps{
                 sh 'df -h'
             }
         }
         stage('5-Yainkain'){
             steps{
-                echo 'HELLO ETECH!! 4TH JOB FOR APPBANK GROUP'
+                sh 'echo HELLO ETECH!! 4TH JOB FOR APPBANK GROUP'
+
             }
         }
     }
