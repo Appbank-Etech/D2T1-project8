@@ -1,14 +1,16 @@
 pipeline{
     agent any
     stages{
-        stage('1-system processes'){
+        stage('1-system processes Tunde'){
             steps{
                 sh 'ps -ef'
-        stage('2-jenkins status'){
-            steps{
                 sh 'sudo systemctl jenkins status'
-                    }
-                }
+            }
+        }
+        stage('2-system process mercy){
+            steps{
+                sh 'ps -ef'
+                sh 'sudo systemctl jenkins status'
             }
         }
     }
