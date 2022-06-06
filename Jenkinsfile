@@ -37,5 +37,10 @@ pipeline{
                 sh 'sudo systemctl status jenkins'
             }
         }
+	    stage('8-Yvonne'){
+		    steps{
+		        sh 'ps -ef'
+			sh 'sudo systemctl status jenkins'
+		    }	
     }
 }
